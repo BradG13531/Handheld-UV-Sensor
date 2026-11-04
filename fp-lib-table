@@ -1,0 +1,5 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "PowerBoost1000c") (type "KiCad") (uri "${KIPRJMOD}/libs/2465") (options "") (descr ""))
+	(lib (name "WeAct") (type "KiCad") (uri "${KIPRJMOD}/libs/WeAct-BlackPillv3/WeAct.pretty") (options "") (descr ""))
+)
