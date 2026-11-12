@@ -774,6 +774,105 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "PowerBoost1000c:2465"
 			(pin_names
 				(offset 1.016)
@@ -2646,6 +2745,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "EINK\nPin		Function\n1		VCC\n2		GND\n3		DIN (SPI MOSI)\n4		CLK (SPI SCK)\n5		CS		\n6		DC\n7		RST\n8		BUSY"
+		(exclude_from_sim no)
+		(at 256.794 96.774 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "15346b19-2c91-47fc-b483-a223140d73e2")
+	)
 	(text "VBAT keeps RTC, 32kHz oscillator and backup registers powered if main uc supply disappears"
 		(exclude_from_sim no)
 		(at 85.852 191.77 0)
@@ -2665,6 +2775,37 @@
 			)
 		)
 		(uuid "8e7b0f85-b1a1-4f37-92fc-c7e1d7c38f18")
+	)
+	(text "<- EINK DIN"
+		(exclude_from_sim no)
+		(at 125.476 159.004 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a25ced5a-669c-4043-8a15-bda81a3aaddf")
+	)
+	(text "TSL2591 \nPIN		Function\n1		VIN\n2		3Vo (Output voltage, not connected)\n3		GND\n4		SCL\n5		SDA\n6		INT"
+		(exclude_from_sim no)
+		(at 178.054 191.262 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c553c7a9-ec13-439a-a0c7-0bba469fe9a2")
+	)
+	(text "<- EINK CLK"
+		(exclude_from_sim no)
+		(at 125.73 154.178 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e26062bc-7fd2-49bb-82b6-f8ee3cd3ec01")
 	)
 	(text "AS7331 and AS7343 pin outs, set so that if \nthey are interchanged nothing will break\n\nPIN		AS7331		AS7343\n1		GND			GND\n2		3V3			3V3\n3		SDA			SDA\n4		SCL			SCL\n5		RDY			INT\n6		SYN			NC"
 		(exclude_from_sim no)
@@ -2690,8 +2831,22 @@
 		(uuid "d8290c77-d9ac-406d-8150-6029541384d4")
 	)
 	(no_connect
+		(at 193.04 205.74)
+		(uuid "0ede31cf-8ccc-4a79-9e94-ace52ededdbf")
+	)
+	(no_connect
 		(at 191.77 157.48)
 		(uuid "728cad53-e076-4deb-b03e-dce24c15a8f6")
+	)
+	(wire
+		(pts
+			(xy 102.87 165.1) (xy 118.11 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04fab470-64e5-46b3-a03c-b9356afe0b00")
 	)
 	(wire
 		(pts
@@ -2712,6 +2867,26 @@
 			(type default)
 		)
 		(uuid "1110db32-29bd-499e-bc4f-741154af693f")
+	)
+	(wire
+		(pts
+			(xy 49.53 127) (xy 59.69 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d77a060-cede-4dba-b0cd-2c269dd8cad8")
+	)
+	(wire
+		(pts
+			(xy 102.87 162.56) (xy 118.11 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22ab8309-6e35-42a4-9a6f-ac707e2fdffa")
 	)
 	(wire
 		(pts
@@ -2745,6 +2920,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 208.28) (xy 193.04 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "410867ef-f51a-4647-930e-7edb46922638")
+	)
+	(wire
+		(pts
 			(xy 173.99 152.4) (xy 191.77 152.4)
 		)
 		(stroke
@@ -2765,7 +2950,37 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 114.3) (xy 246.38 114.3)
+			(xy 251.46 128.27) (xy 262.89 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fec4a26-b5d0-4057-9201-22bdcc1f89a8")
+	)
+	(wire
+		(pts
+			(xy 49.53 132.08) (xy 59.69 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "605bea8b-4cf9-4888-9fd5-51efcd1716ed")
+	)
+	(wire
+		(pts
+			(xy 179.07 210.82) (xy 193.04 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "693d5ea6-36cc-46ca-a9a2-0392116665c8")
+	)
+	(wire
+		(pts
+			(xy 242.57 115.57) (xy 262.89 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2795,6 +3010,16 @@
 	)
 	(wire
 		(pts
+			(xy 251.46 120.65) (xy 262.89 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75bf3542-e670-44c5-a7dc-be25ad9807f1")
+	)
+	(wire
+		(pts
 			(xy 58.42 162.56) (xy 59.69 162.56)
 		)
 		(stroke
@@ -2802,6 +3027,26 @@
 			(type default)
 		)
 		(uuid "777989c8-e546-40f2-9106-09842b9e2b05")
+	)
+	(wire
+		(pts
+			(xy 102.87 144.78) (xy 118.11 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79359dc3-76e8-4487-ab7b-a116ea31a308")
+	)
+	(wire
+		(pts
+			(xy 179.07 213.36) (xy 193.04 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7aefe9b7-fc89-4542-934e-5c8b32263b18")
 	)
 	(wire
 		(pts
@@ -2832,6 +3077,16 @@
 			(type default)
 		)
 		(uuid "8d9ccc6c-35ac-4668-9850-25f6f75f6e6e")
+	)
+	(wire
+		(pts
+			(xy 251.46 118.11) (xy 262.89 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fe0f5df-0d7c-42e8-a92d-e42185bb0f93")
 	)
 	(wire
 		(pts
@@ -2905,6 +3160,36 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 160.02) (xy 118.11 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd0c5e5a-3c46-4d81-aa42-ee22e1bcdf29")
+	)
+	(wire
+		(pts
+			(xy 251.46 130.81) (xy 262.89 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd7e720e-c754-4aa0-b5c8-4229ee48523d")
+	)
+	(wire
+		(pts
+			(xy 102.87 154.94) (xy 118.11 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be8fe31c-5928-495c-9c30-80f53ede5549")
+	)
+	(wire
+		(pts
 			(xy 102.87 152.4) (xy 118.11 152.4)
 		)
 		(stroke
@@ -2912,6 +3197,16 @@
 			(type default)
 		)
 		(uuid "c7939447-1aad-4a33-bc90-71ca9c00788b")
+	)
+	(wire
+		(pts
+			(xy 179.07 215.9) (xy 193.04 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "caea684b-e963-4a4b-b94c-ff9de8e314f1")
 	)
 	(wire
 		(pts
@@ -2975,6 +3270,16 @@
 	)
 	(wire
 		(pts
+			(xy 251.46 125.73) (xy 262.89 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0aefe23-54a1-48bf-8c5e-7b9a42d46044")
+	)
+	(wire
+		(pts
 			(xy 92.71 54.61) (xy 96.52 54.61)
 		)
 		(stroke
@@ -2993,6 +3298,46 @@
 		)
 		(uuid "f2594004-1d6e-46f4-828c-b2a336af1757")
 	)
+	(wire
+		(pts
+			(xy 251.46 123.19) (xy 262.89 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "feb6e3f9-7c13-4686-9e02-1f03e7ae9b81")
+	)
+	(label "SPI1_MOSI"
+		(at 251.46 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "01623b64-92cc-42c5-b471-30ebab29b05a")
+	)
+	(label "EINK_RST"
+		(at 251.46 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f356ea6-bf49-4441-a065-327ed726b89b")
+	)
+	(label "i2c_SDA"
+		(at 179.07 213.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "11c9dbdf-f418-44b5-9a83-2b36d843fea8")
+	)
 	(label "i2c_SCL"
 		(at 173.99 152.4 0)
 		(effects
@@ -3002,6 +3347,26 @@
 			(justify left bottom)
 		)
 		(uuid "19e35e2c-3b0a-4e70-b205-7ebc8b696664")
+	)
+	(label "EINK_BUSY"
+		(at 251.46 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1c03b6ae-11df-403e-8353-5f252fc55e35")
+	)
+	(label "i2c_SCL"
+		(at 179.07 210.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "226ab476-891a-4539-9171-d7fa0b93d9d6")
 	)
 	(label "i2c_SDA"
 		(at 173.99 149.86 0)
@@ -3023,7 +3388,7 @@
 		)
 		(uuid "256c36c4-d405-43cc-8c12-e2d0a62db367")
 	)
-	(label "i2c_SCL"
+	(label "i2c_SDA"
 		(at 113.03 132.08 180)
 		(effects
 			(font
@@ -3033,7 +3398,37 @@
 		)
 		(uuid "29b76f1b-ee38-48cc-98f8-08c203661ec2")
 	)
-	(label "i2c_SDA"
+	(label "EINK_CS"
+		(at 251.46 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2e39c531-f06a-49ee-8573-9225d807e741")
+	)
+	(label "TSL2591_INT"
+		(at 118.11 144.78 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3bfcebfc-586a-44a8-9018-ecb31a74d0cd")
+	)
+	(label "SPI1_SCK"
+		(at 118.11 154.94 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3cdf7671-f82d-4bad-a78d-81e4926c5f26")
+	)
+	(label "i2c_SCL"
 		(at 113.03 129.54 180)
 		(effects
 			(font
@@ -3042,6 +3437,16 @@
 			(justify right bottom)
 		)
 		(uuid "3ef2e23e-6f5d-4189-bc94-b24b114b10ab")
+	)
+	(label "EINK_DC"
+		(at 251.46 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "437cd425-0baf-4f3c-b5cb-d21d4cd18c7b")
 	)
 	(label "i2c_SCL"
 		(at 173.99 123.19 0)
@@ -3073,6 +3478,46 @@
 		)
 		(uuid "711fd2ff-2e2e-4465-b5af-fdb3374551ff")
 	)
+	(label "EINK_BUSY"
+		(at 118.11 162.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7fc1ddf6-0e60-4221-a663-234c02af8c9b")
+	)
+	(label "EINK_DC"
+		(at 49.53 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "92f613b9-f775-4d6e-8708-88f002184958")
+	)
+	(label "SPI1_MOSI"
+		(at 118.11 160.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a0b8baff-dd30-4d70-97be-31414fcc33c5")
+	)
+	(label "EINK_CS"
+		(at 49.53 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a390474b-96a5-4e71-a210-07b01f6ddb50")
+	)
 	(label "AS7331_RDY"
 		(at 118.11 149.86 180)
 		(effects
@@ -3102,6 +3547,36 @@
 			(justify left bottom)
 		)
 		(uuid "c9b7a2b7-6a56-483f-bdac-19399a04fd88")
+	)
+	(label "EINK_RST"
+		(at 118.11 165.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d2f4a1b6-3079-464d-86b0-c40fd5e0e5ab")
+	)
+	(label "SPI1_SCK"
+		(at 251.46 120.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e7901d01-657d-40eb-bf92-67c3e4944dd7")
+	)
+	(label "TSL2591_INT"
+		(at 179.07 215.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ebdfcf50-f0dc-482c-b01c-5bdfdadb8485")
 	)
 	(label "i2c_SDA"
 		(at 173.99 120.65 0)
@@ -3191,8 +3666,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 246.38 111.76 90)
+		(lib_id "Connector_Generic:Conn_01x06")
+		(at 198.12 208.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3201,20 +3676,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "38976072-957e-499d-bb11-6ad66aa92a51")
-		(property "Reference" "#PWR011"
-			(at 250.19 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 242.57 111.7599 90)
+		(uuid "34e03276-15dd-4827-9418-c84fa33f74eb")
+		(property "Reference" "J5"
+			(at 200.66 208.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3224,8 +3688,19 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 246.38 111.76 0)
+		(property "Value" "Conn_01x06"
+			(at 200.66 210.8199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+			(at 198.12 208.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3236,7 +3711,101 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 111.76 0)
+			(at 198.12 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 198.12 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "39b4cd0a-d5ea-4cec-87da-3e490aa67008")
+		)
+		(pin "4"
+			(uuid "42089943-b711-4807-bf45-b437f2001801")
+		)
+		(pin "3"
+			(uuid "ecdf3443-8bb0-4a63-a7b4-b8f162229d5c")
+		)
+		(pin "1"
+			(uuid "6f17b3c6-8a5b-49ae-be69-1a2cac7499d7")
+		)
+		(pin "5"
+			(uuid "b9f288f1-f509-4d07-9166-a2b87866d62b")
+		)
+		(pin "6"
+			(uuid "84c61075-be39-4cf8-9fbd-3947cb98a25c")
+		)
+		(instances
+			(project "Handheld UV Sensor"
+				(path "/e73b27a5-41b0-41d2-807d-340f4558339c"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 262.89 113.03 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38976072-957e-499d-bb11-6ad66aa92a51")
+		(property "Reference" "#PWR011"
+			(at 266.7 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 259.08 113.0299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3247,7 +3816,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 246.38 111.76 0)
+			(at 262.89 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3264,6 +3833,82 @@
 			(project "Handheld UV Sensor"
 				(path "/e73b27a5-41b0-41d2-807d-340f4558339c"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 224.79 46.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d42551c-67b3-4ded-bb63-9a7ac1cd879e")
+		(property "Reference" "H4"
+			(at 227.33 45.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 227.33 48.2599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 224.79 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 224.79 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Handheld UV Sensor"
+				(path "/e73b27a5-41b0-41d2-807d-340f4558339c"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -3496,7 +4141,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x08")
-		(at 251.46 119.38 0)
+		(at 267.97 120.65 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3507,7 +4152,7 @@
 		(fields_autoplaced yes)
 		(uuid "4c382429-2187-42ce-92d7-9471e37ac748")
 		(property "Reference" "J4"
-			(at 254 119.3799 0)
+			(at 270.51 120.6499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3518,7 +4163,7 @@
 			)
 		)
 		(property "Value" "Eink_Display"
-			(at 254 121.9199 0)
+			(at 270.51 123.1899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3528,8 +4173,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 251.46 119.38 0)
+		(property "Footprint" "Connector_JST:JST_PH_S8B-PH-K_1x08_P2.00mm_Horizontal"
+			(at 267.97 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3540,7 +4185,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 251.46 119.38 0)
+			(at 267.97 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3551,7 +4196,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 251.46 119.38 0)
+			(at 267.97 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3750,6 +4395,85 @@
 			(project "Handheld UV Sensor"
 				(path "/e73b27a5-41b0-41d2-807d-340f4558339c"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 193.04 203.2 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5dee9272-e5dc-4a74-aba6-c37397609add")
+		(property "Reference" "#PWR013"
+			(at 196.85 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 189.23 203.1999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 193.04 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d3b194bf-1e70-4736-88b5-1b827179fe60")
+		)
+		(instances
+			(project "Handheld UV Sensor"
+				(path "/e73b27a5-41b0-41d2-807d-340f4558339c"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -4146,6 +4870,158 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 196.85 46.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d717872-2c0a-4198-b2d6-7d20f457b94e")
+		(property "Reference" "H3"
+			(at 199.39 45.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 199.39 48.2599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 196.85 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 196.85 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Handheld UV Sensor"
+				(path "/e73b27a5-41b0-41d2-807d-340f4558339c"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 196.85 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af6a567b-80e5-4973-8426-de14688931a3")
+		(property "Reference" "H1"
+			(at 199.39 35.5599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 199.39 38.0999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 196.85 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 196.85 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Handheld UV Sensor"
+				(path "/e73b27a5-41b0-41d2-807d-340f4558339c"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 81.28 175.26 0)
 		(unit 1)
@@ -4335,7 +5211,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_GH_SM06B-GHS-TB_1x06-1MP_P1.25mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
 			(at 196.85 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -4429,7 +5305,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_GH_SM06B-GHS-TB_1x06-1MP_P1.25mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
 			(at 196.85 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -4491,7 +5367,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 233.68 114.3 0)
+		(at 242.57 115.57 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4502,7 +5378,7 @@
 		(fields_autoplaced yes)
 		(uuid "d809d8f3-f2fb-466e-bc58-69e7da0980c2")
 		(property "Reference" "#PWR012"
-			(at 233.68 120.65 0)
+			(at 242.57 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4513,7 +5389,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 233.68 119.38 0)
+			(at 242.57 120.65 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4523,7 +5399,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 233.68 114.3 0)
+			(at 242.57 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4534,7 +5410,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 233.68 114.3 0)
+			(at 242.57 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4545,7 +5421,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 233.68 114.3 0)
+			(at 242.57 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4562,6 +5438,160 @@
 			(project "Handheld UV Sensor"
 				(path "/e73b27a5-41b0-41d2-807d-340f4558339c"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 224.79 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e05176fd-c9fc-4c78-8871-de422c15972b")
+		(property "Reference" "H2"
+			(at 227.33 35.5599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 227.33 38.0999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 224.79 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 224.79 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Handheld UV Sensor"
+				(path "/e73b27a5-41b0-41d2-807d-340f4558339c"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 171.45 208.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9832e57-5eaa-4b22-993f-e6f2ee4a3c4c")
+		(property "Reference" "#PWR014"
+			(at 171.45 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 171.45 213.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 171.45 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "42f66045-8fc5-431b-baba-3be1b027464f")
+		)
+		(instances
+			(project "Handheld UV Sensor"
+				(path "/e73b27a5-41b0-41d2-807d-340f4558339c"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
