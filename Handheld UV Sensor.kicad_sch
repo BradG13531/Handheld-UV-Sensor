@@ -3968,6 +3968,16 @@
 		)
 		(uuid "1c03b6ae-11df-403e-8353-5f252fc55e35")
 	)
+	(label "uGPIO4"
+		(at 118.11 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1fb18a49-370f-47e5-93da-4a87d2e74156")
+	)
 	(label "i2c_SCL"
 		(at 179.07 210.82 0)
 		(effects
@@ -4168,16 +4178,6 @@
 		)
 		(uuid "92f613b9-f775-4d6e-8708-88f002184958")
 	)
-	(label "uGPIO4"
-		(at 118.11 111.76 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9d90426e-415e-4055-b000-b331a8aeae22")
-	)
 	(label "button4"
 		(at 118.11 127 180)
 		(effects
@@ -4208,16 +4208,6 @@
 		)
 		(uuid "a390474b-96a5-4e71-a210-07b01f6ddb50")
 	)
-	(label "uGPIO3"
-		(at 118.11 114.3 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b5056d05-1f5f-46a3-97d0-8bd3523f0cd5")
-	)
 	(label "AS7331_RDY"
 		(at 118.11 149.86 180)
 		(effects
@@ -4247,6 +4237,16 @@
 			(justify left bottom)
 		)
 		(uuid "c79a3191-0a66-4cbd-969b-59bc5ee54ff2")
+	)
+	(label "uGPIO3"
+		(at 118.11 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c8e1b498-6c14-4c39-b47f-231fedd2962b")
 	)
 	(label "AS7331_SYN"
 		(at 173.99 128.27 0)
