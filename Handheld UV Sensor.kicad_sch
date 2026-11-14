@@ -3135,6 +3135,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "TSL2591 Adafruit Link"
+		(exclude_from_sim no)
+		(at 195.834 221.742 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.adafruit.com/product/1980")
+		)
+		(uuid "0db1992e-215b-4bcd-b5c0-dd4f1ed97eb6")
+	)
 	(text "EINK\nPin		Function\n1		VCC\n2		GND\n3		DIN (SPI MOSI)\n4		CLK (SPI SCK)\n5		CS		\n6		DC\n7		RST\n8		BUSY"
 		(exclude_from_sim no)
 		(at 256.794 96.774 0)
@@ -3145,6 +3156,27 @@
 			(justify left)
 		)
 		(uuid "15346b19-2c91-47fc-b483-a223140d73e2")
+	)
+	(text "PowerBoost 1000c Digitkey Link"
+		(exclude_from_sim no)
+		(at 69.342 77.978 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.digikey.com/en/products/detail/adafruit-industries-llc/2465/5356834")
+		)
+		(uuid "17b7166d-b2cb-4385-a8fe-60b9b3438381")
+	)
+	(text "PowerBoost 1000c"
+		(exclude_from_sim no)
+		(at 76.708 25.654 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "28849e4a-a57c-4861-8c97-02709391bf91")
 	)
 	(text "EINK Display"
 		(exclude_from_sim no)
@@ -3168,7 +3200,7 @@
 	)
 	(text "AS7343"
 		(exclude_from_sim no)
-		(at 203.2 155.956 0)
+		(at 203.2 161.036 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3206,6 +3238,17 @@
 		)
 		(uuid "8e7b0f85-b1a1-4f37-92fc-c7e1d7c38f18")
 	)
+	(text "EINK Amazon Link"
+		(exclude_from_sim no)
+		(at 267.208 135.636 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.amazon.com/1-54inch-200x200-Display-Raspberry-Interface/dp/B0D5DGZXG3?crid=2WM4ASK11V0CF&dib=eyJ2IjoiMSJ9.73IuEUbYD4Ef5qXAnoofqDZEXvmtBY2CNABHIT4HzpCsy0bYwJIL7J2uSoW6mP7i.zkodvhA0AQcuzg7n6QjlaU-yoQrSKQg3-EhWHnJqGY8&dib_tag=se&keywords=Adafruit+1.54%22+Monochrome+eInk+%2F+ePaper+Display+with+SRAM+-+200x200+with+SSD1681+and+EYESPI&nsdOptOutParam=true&qid=1789673485&sprefix=adafruit+1.54+monochrome+eink+%2F+epaper+display+with+sram+-+200x200+with+ssd1681+and+eyespi%2Caps%2C229&sr=8-3")
+		)
+		(uuid "93aa0601-a172-49c7-8be7-43bcd25fc234")
+	)
 	(text "<- EINK DIN"
 		(exclude_from_sim no)
 		(at 125.476 159.004 0)
@@ -3215,6 +3258,28 @@
 			)
 		)
 		(uuid "a25ced5a-669c-4043-8a15-bda81a3aaddf")
+	)
+	(text "BlackPillv3 Amazon Link"
+		(exclude_from_sim no)
+		(at 81.534 185.928 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.amazon.com/dp/B0DLNDY4V7")
+		)
+		(uuid "a29ac462-6263-4f61-88d8-97ee12a523ab")
+	)
+	(text "AS7331 Link"
+		(exclude_from_sim no)
+		(at 192.532 133.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.elecrow.com/as7331-uva-b-c-light-sensor-breakout.html")
+		)
+		(uuid "b9dae80e-1e59-412f-81af-b584b08807fb")
 	)
 	(text "TSL2591 \nPIN		Function\n1		VIN\n2		3Vo (Output voltage, not connected)\n3		GND\n4		SCL\n5		SDA\n6		INT"
 		(exclude_from_sim no)
@@ -3226,6 +3291,17 @@
 			(justify left)
 		)
 		(uuid "c553c7a9-ec13-439a-a0c7-0bba469fe9a2")
+	)
+	(text "AS7343 Digikey Link"
+		(exclude_from_sim no)
+		(at 193.802 167.386 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.digikey.com/en/products/detail/sparkfun-electronics/SEN-23220/26769973")
+		)
+		(uuid "c5c8a158-b7d6-4de4-8d90-d7a4cdea3559")
 	)
 	(text "<- EINK CLK"
 		(exclude_from_sim no)
@@ -3275,7 +3351,7 @@
 		(uuid "0ede31cf-8ccc-4a79-9e94-ace52ededdbf")
 	)
 	(no_connect
-		(at 191.77 157.48)
+		(at 191.77 162.56)
 		(uuid "728cad53-e076-4deb-b03e-dce24c15a8f6")
 	)
 	(wire
@@ -3420,7 +3496,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 152.4) (xy 191.77 152.4)
+			(xy 173.99 157.48) (xy 191.77 157.48)
 		)
 		(stroke
 			(width 0)
@@ -3530,7 +3606,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 154.94) (xy 191.77 154.94)
+			(xy 173.99 160.02) (xy 191.77 160.02)
 		)
 		(stroke
 			(width 0)
@@ -3600,7 +3676,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 137.16) (xy 185.42 137.16)
+			(xy 191.77 142.24) (xy 185.42 142.24)
 		)
 		(stroke
 			(width 0)
@@ -3640,7 +3716,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 144.78) (xy 191.77 137.16)
+			(xy 191.77 149.86) (xy 191.77 142.24)
 		)
 		(stroke
 			(width 0)
@@ -3680,7 +3756,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 137.16) (xy 185.42 139.7)
+			(xy 185.42 142.24) (xy 185.42 144.78)
 		)
 		(stroke
 			(width 0)
@@ -3780,7 +3856,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 149.86) (xy 191.77 149.86)
+			(xy 173.99 154.94) (xy 191.77 154.94)
 		)
 		(stroke
 			(width 0)
@@ -3949,7 +4025,7 @@
 		(uuid "1734d80b-270e-4781-bbee-58f6e6a93a67")
 	)
 	(label "i2c_SCL"
-		(at 173.99 152.4 0)
+		(at 173.99 157.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3999,7 +4075,7 @@
 		(uuid "22d60e3b-16e7-448f-a42f-92c0ee30bc2d")
 	)
 	(label "i2c_SDA"
-		(at 173.99 149.86 0)
+		(at 173.99 154.94 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4109,7 +4185,7 @@
 		(uuid "5ced000f-493d-4c30-bd0f-073f223896ab")
 	)
 	(label "AS7343_INT"
-		(at 173.99 154.94 0)
+		(at 173.99 160.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4310,7 +4386,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 185.42 139.7 0)
+		(at 185.42 144.78 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4320,7 +4396,7 @@
 		(dnp no)
 		(uuid "155ddccb-6044-4157-900a-f39d468cc9e2")
 		(property "Reference" "#PWR08"
-			(at 185.42 146.05 0)
+			(at 185.42 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4331,7 +4407,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 185.42 143.764 0)
+			(at 185.42 148.844 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4341,7 +4417,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 139.7 0)
+			(at 185.42 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4352,7 +4428,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 139.7 0)
+			(at 185.42 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4363,7 +4439,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 185.42 139.7 0)
+			(at 185.42 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5040,7 +5116,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 191.77 147.32 90)
+		(at 191.77 152.4 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5051,7 +5127,7 @@
 		(fields_autoplaced yes)
 		(uuid "572a9b22-a4ab-479f-85b2-b7de39d9d18e")
 		(property "Reference" "#PWR010"
-			(at 195.58 147.32 0)
+			(at 195.58 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5062,7 +5138,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 187.96 147.3199 90)
+			(at 187.96 152.3999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5073,7 +5149,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 191.77 147.32 0)
+			(at 191.77 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5084,7 +5160,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 191.77 147.32 0)
+			(at 191.77 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5095,7 +5171,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 191.77 147.32 0)
+			(at 191.77 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6415,7 +6491,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
-		(at 196.85 149.86 0)
+		(at 196.85 154.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6426,7 +6502,7 @@
 		(fields_autoplaced yes)
 		(uuid "d2c48d9e-7249-4d7b-afb2-e5895a8594fa")
 		(property "Reference" "J3"
-			(at 199.39 149.8599 0)
+			(at 199.39 154.9399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6437,7 +6513,7 @@
 			)
 		)
 		(property "Value" "Conn_01x06"
-			(at 199.39 152.3999 0)
+			(at 199.39 157.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6448,7 +6524,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
-			(at 196.85 149.86 0)
+			(at 196.85 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6459,7 +6535,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 196.85 149.86 0)
+			(at 196.85 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6470,7 +6546,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 196.85 149.86 0)
+			(at 196.85 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
