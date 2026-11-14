@@ -3157,7 +3157,7 @@
 		)
 		(uuid "15346b19-2c91-47fc-b483-a223140d73e2")
 	)
-	(text "PowerBoost 1000c Digitkey Link"
+	(text "PowerBoost 1000c Digikey Link"
 		(exclude_from_sim no)
 		(at 69.342 77.978 0)
 		(effects
@@ -3177,6 +3177,17 @@
 			)
 		)
 		(uuid "28849e4a-a57c-4861-8c97-02709391bf91")
+	)
+	(text "Battery Digikey Link"
+		(exclude_from_sim no)
+		(at 63.5 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.digikey.com/en/products/detail/adafruit-industries-llc/258/5054544")
+		)
+		(uuid "35e9ed37-5b23-4b04-b04d-3c2547ac547b")
 	)
 	(text "EINK Display"
 		(exclude_from_sim no)

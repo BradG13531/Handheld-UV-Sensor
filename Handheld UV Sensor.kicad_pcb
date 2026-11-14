@@ -2645,7 +2645,7 @@
 		(descr "JST PH series connector, S2B-PH-K (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf)")
 		(tags "connector JST PH horizontal")
 		(property "Reference" "J1"
-			(at 1 2.55 90)
+			(at 3.5 3 0)
 			(layer "B.SilkS")
 			(uuid "617d56f3-b0ae-486e-933f-732571e8c5f3")
 			(effects
@@ -4058,6 +4058,18 @@
 			(font
 				(size 1 1)
 				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "PWR SW"
+		(at 194.5 119.5 0)
+		(layer "B.SilkS")
+		(uuid "cc426f8f-cfc7-4077-bfd2-7e8733ab9e13")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
 			)
 			(justify left bottom mirror)
 		)

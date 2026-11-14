@@ -978,6 +978,28 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Digikey Link for B3F-4050"
+		(exclude_from_sim no)
+		(at 135.128 134.112 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.digikey.com/en/products/detail/aratas-formerly-omron-components/B3F-4050/95200")
+		)
+		(uuid "0afc5faf-1ac4-4347-9417-3f0ec593fb77")
+	)
+	(text "Link for keycaps"
+		(exclude_from_sim no)
+		(at 130.048 139.192 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.digikey.com/en/products/detail/aratas-formerly-omron-components/B32-1360/12626")
+		)
+		(uuid "3dd129a2-094f-4633-9fd4-7114dc63e339")
+	)
 	(junction
 		(at 195.58 78.74)
 		(diameter 0)
