@@ -5322,16 +5322,6 @@
 		)
 		(uuid "29b76f1b-ee38-48cc-98f8-08c203661ec2")
 	)
-	(label "button2"
-		(at 118.11 134.62 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2c994d6b-f2f6-408e-85c6-fed0a90b83ac")
-	)
 	(label "EINK_CS"
 		(at 251.46 123.19 0)
 		(effects
@@ -5442,6 +5432,16 @@
 		)
 		(uuid "6193bb06-30f1-4839-b22c-d87cedb69b3a")
 	)
+	(label "button2"
+		(at 118.11 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "64a295b1-cbe5-4255-b520-a3376ef527fd")
+	)
 	(label "AS7331_RDY"
 		(at 173.99 125.73 0)
 		(effects
@@ -5451,16 +5451,6 @@
 			(justify left bottom)
 		)
 		(uuid "711fd2ff-2e2e-4465-b5af-fdb3374551ff")
-	)
-	(label "button3"
-		(at 118.11 124.46 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "73cfe139-2b30-4c07-93d4-26f9b33f6af9")
 	)
 	(label "uGPIO1"
 		(at 118.11 147.32 180)
@@ -5551,6 +5541,16 @@
 			(justify right bottom)
 		)
 		(uuid "a74a02b6-0034-4dba-9851-b1d4ae4b2eeb")
+	)
+	(label "button3"
+		(at 118.11 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bd6723cd-7596-424b-b9b1-ac1991f5ba46")
 	)
 	(label "AS7331_RDY"
 		(at 118.11 149.86 180)

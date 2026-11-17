@@ -557,7 +557,7 @@
       },
       {
         "netclass": "Power",
-        "pattern": "PB_VBAT"
+        "pattern": "/PB_VBAT"
       }
     ]
   },
