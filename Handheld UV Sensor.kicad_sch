@@ -5462,6 +5462,16 @@
 		)
 		(uuid "77d8a3ba-f17e-451d-b54e-22d4d7f3fb59")
 	)
+	(label "button4"
+		(at 118.11 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7f311f22-1f52-49d1-84be-a6ea9028c812")
+	)
 	(label "EINK_BUSY"
 		(at 118.11 162.56 180)
 		(effects
@@ -5471,6 +5481,16 @@
 			(justify right bottom)
 		)
 		(uuid "7fc1ddf6-0e60-4221-a663-234c02af8c9b")
+	)
+	(label "button3"
+		(at 118.11 127 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "81a982fc-f8cd-429a-a4f5-89d7a581a71d")
 	)
 	(label "uGPIO3"
 		(at 250.19 170.18 0)
@@ -5491,16 +5511,6 @@
 			(justify left bottom)
 		)
 		(uuid "92f613b9-f775-4d6e-8708-88f002184958")
-	)
-	(label "button4"
-		(at 118.11 127 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9dfca2a3-c7ef-4404-88bc-f424fb98a5ed")
 	)
 	(label "SPI1_MOSI"
 		(at 118.11 160.02 180)
@@ -5541,16 +5551,6 @@
 			(justify right bottom)
 		)
 		(uuid "a74a02b6-0034-4dba-9851-b1d4ae4b2eeb")
-	)
-	(label "button3"
-		(at 118.11 134.62 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "bd6723cd-7596-424b-b9b1-ac1991f5ba46")
 	)
 	(label "AS7331_RDY"
 		(at 118.11 149.86 180)
