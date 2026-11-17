@@ -544,7 +544,14 @@
     "meta": {
       "version": 5
     },
-    "net_colors": {},
+    "net_colors": {
+      "+3V3": "rgb(0, 163, 255)",
+      "+5V": "rgb(255, 243, 0)",
+      "/SPI1_MOSI": "rgb(205, 0, 255)",
+      "/SPI1_SCK": "rgb(237, 0, 255)",
+      "/i2c_SCL": "rgb(255, 0, 26)",
+      "/i2c_SDA": "rgb(255, 0, 4)"
+    },
     "netclass_assignments": {},
     "netclass_patterns": [
       {
@@ -565,7 +572,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "Gerber/",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
